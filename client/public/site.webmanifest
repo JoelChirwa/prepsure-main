@@ -1,0 +1,21 @@
+{
+  "name": "PrepSure | Practical Science Made Simple",
+  "short_name": "PrepSure",
+  "description": "Explore practical experiments, follow clear procedures, and build confidence for science exams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171916",
+  "theme_color": "#171916",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

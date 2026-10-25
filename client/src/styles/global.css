@@ -1,0 +1,92 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #f0efe7;
+  background: #171916;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background: 80 6% 9%;
+  --foreground: 60 17% 92%;
+  --card: 80 5% 12%;
+  --card-foreground: 60 17% 92%;
+  --popover: 80 5% 12%;
+  --popover-foreground: 60 17% 92%;
+  --primary: 78 25% 68%;
+  --primary-foreground: 80 15% 12%;
+  --secondary: 80 7% 17%;
+  --secondary-foreground: 60 17% 92%;
+  --muted: 80 6% 17%;
+  --muted-foreground: 75 7% 66%;
+  --accent: 78 25% 68%;
+  --accent-foreground: 80 15% 12%;
+  --border: 80 6% 23%;
+  --input: 80 6% 23%;
+  --ring: 78 25% 68%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #171916;
+  color: #f0efe7;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.hero-background-drift {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hero-background-drift 18s ease-in-out infinite;
+}
+
+.hero-background-drift-reverse {
+  animation: hero-background-drift-reverse 22s ease-in-out infinite;
+}
+
+@keyframes hero-background-drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(12px, -10px);
+  }
+}
+
+@keyframes hero-background-drift-reverse {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, 12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-background-drift,
+  .hero-background-drift-reverse {
+    animation: none;
+  }
+}
